@@ -1,0 +1,45 @@
+project:
+  name: kidney_stone_2d_segmentation_kssd2025
+  seed: 42
+data:
+  raw_dir: data/raw/kssd2025
+  manifest_csv: data/processed/manifest.csv
+  splits_dir: data/splits
+  test_size: 0.15
+  val_size: 0.15
+  image_size:
+  - 512
+  - 512
+training:
+  epochs: 25
+  batch_size: 4
+  learning_rate: 0.0002
+  weight_decay: 1.0e-05
+  num_workers: 2
+  amp: true
+  early_stopping_patience: 5
+  threshold: 0.993
+model:
+  in_channels: 1
+  out_channels: 1
+  channels:
+  - 16
+  - 32
+  - 64
+  - 128
+  strides:
+  - 2
+  - 2
+  - 2
+  num_res_units: 2
+  dropout: 0.0
+postprocess:
+  min_component_pixels: 50
+paths:
+  best_model: models/best_2d_unet.pth
+  last_checkpoint: models/last_checkpoint.pth
+  history_csv: results/metrics/training_history.csv
+  test_csv: results/metrics/test_metrics.csv
+  test_summary: results/metrics/test_summary.json
+  sample_figure: results/figures/sample_overlay.png
+  prediction_dir: results/predictions

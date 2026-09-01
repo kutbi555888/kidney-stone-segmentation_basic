@@ -1,0 +1,15 @@
+{
+    "n_test": 126,
+    "mean_dice": 0.6027469593608938,
+    "mean_iou": 0.4477794228790026,
+    "mean_precision": 0.559594698712458,
+    "mean_recall": 0.6886712186968388,
+    "global_dice": 0.6635964641160664,
+    "global_iou": 0.49655395716808276,
+    "global_precision": 0.6174034737939162,
+    "global_recall": 0.7172605790652177,
+    "mean_area_abs_error_pixels": 90.93650793650794,
+    "threshold": 0.993,
+    "min_component_pixels": 50,
+    "important_note": "KSSD2025 2D TIF pipeline fizik pixel spacing ishlatmagani sabab area pixel birlikda beriladi; mm2 yoki mm3 hisoblanmaydi. Connected-component soni klinik kidney-stone count sifatida baholanmaydi."
+}

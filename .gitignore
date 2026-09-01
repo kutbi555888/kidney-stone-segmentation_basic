@@ -1,0 +1,113 @@
+
+# ============================================================
+# PYTHON
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# ============================================================
+# JUPYTER
+# ============================================================
+
+.ipynb_checkpoints/
+
+
+# ============================================================
+# VIRTUAL ENVIRONMENTS
+# ============================================================
+
+.venv/
+venv/
+env/
+my_env/
+my_envi/
+
+
+# ============================================================
+# ENVIRONMENT / SECRET FILES
+# ============================================================
+
+.env
+.env.*
+*.env
+
+
+# ============================================================
+# OS / EDITOR
+# ============================================================
+
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+
+
+# ============================================================
+# RAW DATASET
+#
+# KSSD2025 raw dataset GitHub'ga yuborilmaydi.
+# Dataset download_data.py orqali qayta olinadi.
+# ============================================================
+
+data/raw/*
+
+!data/raw/.gitkeep
+
+
+# ============================================================
+# GENERATED DATA FILES
+#
+# manifest va split CSVlar local/Colab absolute pathlarni
+# saqlashi mumkin, shuning uchun GitHub'ga yuborilmaydi.
+# prepare_data.py orqali qayta yaratiladi.
+# ============================================================
+
+data/processed/*
+!data/processed/.gitkeep
+
+data/splits/*
+!data/splits/.gitkeep
+
+
+# ============================================================
+# MODEL CHECKPOINTS
+#
+# Training resume checkpoint GitHub'ga kerak emas.
+# Final best model esa kichik bo'lgani uchun saqlanadi.
+# ============================================================
+
+models/*.pth
+
+!models/best_2d_unet.pth
+
+
+# ============================================================
+# PREDICTIONS
+#
+# Har yangi inference yangi rasmlar yaratishi mumkin.
+# Ularni repository'da yig'ib bormaymiz.
+# ============================================================
+
+results/predictions/*
+
+!results/predictions/.gitkeep
+
+
+# ============================================================
+# TEMP / BACKUP FILES
+# ============================================================
+
+*.tmp
+*.temp
+*.bak
+*.log
+
+# ============================================================
+# GRADIO LOCAL FILES
+# ============================================================
+.gradio/
+*.pem
